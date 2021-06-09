@@ -14,3 +14,7 @@ export function filter(arr, callback) {
   }
   return filteredArr;
 }
+
+export function findIndex(arr, callback) {
+  //
+}

@@ -1,5 +1,5 @@
-import { map } from '../app.js';
-import { filter } from '../app.js';
+import { map, filter, findIndex } from '../app.js';
+
 
 describe('map', () => {
   it('takes an array and callback and creates a new array with the return value of each called callback', () => {
@@ -17,6 +17,15 @@ describe('filter', () => {
 
     const filteredArray = filter(input, (n) => {return (n > 2 ? n : 0);});
     expect(filteredArray).toEqual([3, 4]);
+  });
+});
+
+describe('findIndex', () => {
+  it('returns the index of the found item', () => {
+    const input = [1, 3, 4, 6, 7, 2];
+
+    const findArr = findIndex(input, (n) => {return n === 4;});
+    expect(findArr).toEqual(4);
   });
 });
 
