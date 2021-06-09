@@ -24,8 +24,8 @@ describe('findIndex', () => {
   it('returns the index of the found item', () => {
     const input = [1, 3, 4, 6, 7, 2];
 
-    const findArr = findIndex(input, (n) => {return n === 4;});
-    expect(findArr).toEqual(4);
+    const findArr = findIndex(input, (n) => {return n === 2;});
+    expect(findArr).toEqual(5);
   });
 });
 
