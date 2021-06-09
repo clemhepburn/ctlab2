@@ -1,4 +1,4 @@
-import { map, filter, findIndex } from '../app.js';
+import { map, filter, findIndex, reduce } from '../app.js';
 
 
 describe('map', () => {
@@ -26,6 +26,15 @@ describe('findIndex', () => {
 
     const findArr = findIndex(input, (n) => {return n === 2;});
     expect(findArr).toEqual(5);
+  });
+});
+
+describe('reduce', () => {
+  it('returns accumulator', () => {
+    const input = [1, 2, 3, 4];
+
+    const reduceArr = reduce(input, (n) => {return n + n;}, 0);
+    expect(reduceArr).toEqual(6);
   });
 });
 
