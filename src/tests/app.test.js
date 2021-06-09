@@ -33,8 +33,8 @@ describe('reduce', () => {
   it('returns accumulator', () => {
     const input = [1, 2, 3, 4];
 
-    const reduceArr = reduce(input, (n) => {return n + n;}, 0);
-    expect(reduceArr).toEqual(6);
+    const reduceArr = reduce(input, (n) => {return n * n;}, 0);
+    expect(reduceArr).toEqual(16);
   });
 });
 
