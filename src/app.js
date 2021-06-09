@@ -6,3 +6,7 @@ export function map(arr, callback) {
 
   return newArr;
 }
+
+export function filter(arr, callback) {
+  //
+}
